@@ -22,7 +22,7 @@ interface ModalAddFoodPorps {
 
 export function ModalAddFood({ isOpen, setIsOpen, handleAddFood }: ModalAddFoodPorps) {
 
-  const formRef = useRef(null) // talvez seja useRef<FormHandless>
+  const formRef = useRef(null) 
 
   const handleSubmit = async (data: AddFood) => {
     handleAddFood(data);
